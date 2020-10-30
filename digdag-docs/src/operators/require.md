@@ -72,9 +72,9 @@
 
 * **rerun_on**: none, failed, all (default: none)
 
-  *rerun_on* control require> really kicks or not if the attempt for the dependent workflow already exists. 
+  *rerun_on* control require> really kicks or not if the attempt for the dependent workflow already exists. If the attempt does not exist, the dependent workflow is always kicked.
   * *none* ... Not kick the workflow if the attempt already exists.
-  * *failed* ... Kick the workflow if the attempt may exists and its result is not success.
+  * *failed* ... Kick the workflow if the attempt exists and its result is not success.
   * *all* ... require> kick the workflow regardless of the result of the attempt.
 
 * **ignore_failure**: BOOLEAN
