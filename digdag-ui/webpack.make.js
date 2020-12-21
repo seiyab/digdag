@@ -101,6 +101,11 @@ module.exports = function buildWebpackConfig ({ build = false }) {
         chunk: false,
         colors: true,
         modules: false
+      },
+      proxy: {
+        '/api': {
+          target: `http://localhost:${process.env.API_PORT}`
+        }
       }
     }
   }
